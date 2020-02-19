@@ -27,6 +27,7 @@ def main_loop(stdscr):
     curses.curs_set(0)
 
     while True:
+        stdscr.clear()
         update(stdscr)
         c = stdscr.getch()
         if c == curses.KEY_RESIZE:
